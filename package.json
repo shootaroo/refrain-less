@@ -1,0 +1,22 @@
+{
+  "name": "refrain-less",
+  "version": "0.0.1",
+  "description": "less with refrain.",
+  "keywords": [
+    "refrain",
+    "refrainplugin",
+    "less"
+  ],
+  "homepage": "https://github.com/shootaroo/refrain-less",
+  "bugs": "https://github.com/shootaroo/refrain-less/issues",
+  "license": "MIT",
+  "author": "shootaroo <shotaro.tsubouchi@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shootaroo/refrain-less.git"
+  },
+  "dependencies": {
+    "fast.js": "^0.0.5",
+    "less": "^2.1.1"
+  }
+}

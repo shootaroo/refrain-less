@@ -1,3 +1,5 @@
+var util = require('util');
+
 var less = require('less');
 var fast = require('fast.js');
 
@@ -7,6 +9,7 @@ module.exports = function (text, content, callback) {
     paths: [refrain.options.srcDir],
     filename: content.filePath
   }), function (err, output) {
-    callback(err, output ? output.css : output)
+    if (err) err = util.format('Error: %s\n    at %s:%d:%d', err.message, err.filename, err.line, err.column);
+    callback(err, output ? output.css : output);
   });
 };
